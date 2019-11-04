@@ -28,11 +28,11 @@ class Student
   end
 
   def test_pass
-    tests.select {|t| t.teststatus == "pass"}
+    tests.select {|t| t.teststatus == "passed"}
   end
 
   def test_fail
-    tests.select {|t| t.teststatus == "fail"}
+    tests.select {|t| t.teststatus == "failed"}
   end
 
   def grade_percentage
